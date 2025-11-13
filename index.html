@@ -4,75 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İstanbul’un Fethi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
         /* Genel stil */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #fff, #f5f5f5);
             color: #222;
         }
 
         /* Header */
         header {
-            background-color: #c8102e; /* kırmızı ton */
+            background: linear-gradient(90deg, #c8102e, #e63946);
             color: white;
-            padding: 20px 0;
+            padding: 40px 20px;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 3rem;
+            font-family: 'Playfair Display', serif;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
         }
 
         nav {
-            background-color: #e63946; /* daha açık kırmızı */
-            padding: 10px 0;
+            background-color: rgba(200, 16, 46, 0.9);
+            padding: 15px 0;
             text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
         }
 
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
+            transition: 0.3s;
         }
 
         nav a:hover {
             text-decoration: underline;
+            color: #ffd6d6;
         }
 
         /* Ana içerik */
         .content {
-            max-width: 900px;
-            margin: 30px auto;
+            max-width: 1000px;
+            margin: 40px auto;
             padding: 0 20px;
-            line-height: 1.7;
         }
 
-        .content h2 {
+        section {
+            background-color: rgba(255,255,255,0.95);
+            padding: 30px 25px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+        }
+
+        section h2 {
+            font-family: 'Playfair Display', serif;
             color: #c8102e;
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+
+        section p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
         }
 
         /* Footer */
         footer {
-            background-color: #c8102e;
+            background: linear-gradient(90deg, #c8102e, #e63946);
             color: white;
             text-align: center;
-            padding: 15px 0;
-            margin-top: 40px;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
         }
 
         /* Responsive */
-        @media(max-width:600px){
+        @media(max-width:768px){
             header h1 {
-                font-size: 1.8rem;
+                font-size: 2.2rem;
             }
             nav a {
                 display: block;
-                margin: 5px 0;
+                margin: 8px 0;
             }
         }
     </style>
@@ -93,34 +123,46 @@
         <section id="tarihce">
             <h2>Tarihçe</h2>
             <p>
-                İstanbul, tarih boyunca birçok medeniyete ev sahipliği yapmış, stratejik konumu nedeniyle sürekli ilgi odağı olmuş bir şehir olmuştur. 330 yılında Roma İmparatoru I. Konstantin tarafından “Yeni Roma” adıyla başkent ilan edilen şehir, Bizans İmparatorluğu döneminde Konstantinopolis olarak anılmıştır. 15. yüzyılın ortalarında Osmanlı Sultanı II. Mehmet, genç yaşına rağmen İstanbul’u fethetmeye karar vermiştir. Bu fetih, hem Doğu ile Batı arasındaki dengeleri değiştirmiş hem de Osmanlı’nın gücünü zirveye taşımıştır.
+                İstanbul, tarihi boyunca hem Doğu’nun hem Batı’nın kapısı olarak eşsiz bir öneme sahip olmuştur. Antik çağlardan itibaren stratejik konumu ile dikkat çeken şehir, 330 yılında Roma İmparatoru I. Konstantin tarafından “Yeni Roma” adıyla başkent ilan edilmiştir. Zamanla Bizans İmparatorluğu’nun merkezi haline gelen şehir, dünyanın en görkemli surları ve eşsiz mimarisi ile tarihe damgasını vurmuştur.
+            </p>
+            <p>
+                15. yüzyıl ortalarında, Osmanlı Padişahı II. Mehmet, sadece 21 yaşında olmasına rağmen genç yaşına rağmen büyük bir vizyon ile İstanbul’u fethetmeye karar vermiştir. Bu fetih, yalnızca Osmanlı Devleti’nin kaderini değil, tüm dünya tarihini değiştiren bir dönüm noktası olacaktır.
             </p>
         </section>
 
         <section id="hazirlik">
             <h2>Hazırlıklar</h2>
             <p>
-                II. Mehmet, İstanbul’un fethine hazırlanırken büyük bir strateji ve planlama süreci yürütmüştür. Karadan ve denizden kuşatma için gerekli malzemeler temin edilmiş, toplar döktürülmüş ve donanma güçlendirilmiştir. Ayrıca, şehrin surlarını aşabilmek için farklı yöntemler geliştirilmiş ve kuşatma teknikleri titizlikle planlanmıştır. Bu hazırlıklar, Osmanlı ordusunun başarısında kritik bir rol oynamıştır.
+                II. Mehmet, İstanbul’un fethi için kapsamlı bir hazırlık süreci başlatmıştır. Ordusunu güçlendirmiş, devasa toplar döktürmüş ve donanmasını modern tekniklerle donatmıştır. Şehrin ünlü surlarını aşmak için farklı stratejiler geliştirilmiş, kuşatma teknikleri titizlikle planlanmıştır.
+            </p>
+            <p>
+                Ayrıca psikolojik savaş da hazırlıkların bir parçası olmuştur. Şehrin savunmasını zayıflatmak için casuslar gönderilmiş, çeşitli diplomatik hamleler yapılmıştır. Tüm bu hazırlıklar, II. Mehmet’in ileri görüşlülüğünü ve stratejik zekâsını ortaya koymaktadır.
             </p>
         </section>
 
         <section id="fetih">
             <h2>Fetih</h2>
             <p>
-                6 Nisan 1453 tarihinde başlayan kuşatma yaklaşık 53 gün sürmüştür. Osmanlı ordusu karadan büyük toplarla surları dövmüş, denizden ise Haliç’e gemilerini karadan taşıyarak Bizans savunmasını zayıflatmıştır. 29 Mayıs 1453 sabahı, Osmanlı askerleri surları aşmış ve şehir tamamen Osmanlı kontrolüne geçmiştir. Bu olay, Orta Çağ’ın sonunu simgeleyen büyük bir tarihî dönüm noktası olarak kabul edilmektedir.
+                6 Nisan 1453’te başlayan kuşatma, tarihin en dikkat çekici ve karmaşık askeri operasyonlarından biri olarak kayda geçmiştir. Osmanlı ordusu, karadan büyük toplarla surları dövmüş, denizden ise Haliç’e gemilerini karadan taşıyarak savunmayı şaşırtmıştır. Kuşatma süresince her gün stratejik hamleler yapılmış, karşılıklı saldırılar ve savunmalar büyük bir sabır ve planlama gerektirmiştir.
+            </p>
+            <p>
+                29 Mayıs 1453 sabahı, Osmanlı askerleri surları aşmış ve şehir tamamen Osmanlı hâkimiyetine geçmiştir. Konstantinopolis’in düşüşü, Orta Çağ’ın sonunu simgeleyen tarihi bir dönüm noktası olarak kabul edilmektedir. Fetih, askeri zekâ, cesaret ve planlamanın birleşimiyle elde edilen büyük bir zaferdir.
             </p>
         </section>
 
         <section id="sonuc">
             <h2>Sonuç</h2>
             <p>
-                İstanbul’un fethi, sadece Osmanlı tarihini değil, dünya tarihini de derinden etkilemiştir. Bizans İmparatorluğu sona ermiş, Osmanlı Devleti yeni başkenti İstanbul yaparak Avrupa ve Asya arasında stratejik bir güç merkezi haline gelmiştir. Bu fetih, Osmanlı’nın hem askeri hem de siyasi gücünü pekiştirmiş, İstanbul’u kültürel ve ticari bir merkez hâline getirmiştir.
+                İstanbul’un fethi, sadece Osmanlı tarihini değil, dünya tarihini de derinden etkilemiştir. Bizans İmparatorluğu sona ermiş, Osmanlı Devleti ise İstanbul’u yeni başkenti yaparak Doğu ile Batı arasında stratejik bir güç merkezi hâline gelmiştir. Şehir, kültürel, ticari ve siyasi açıdan önemli bir merkez olmuş, Osmanlı’nın gücünü pekiştirmiştir.
+            </p>
+            <p>
+                Fetih sonrası İstanbul, imparatorluğun ekonomik ve kültürel kalbi olarak gelişmiş; mimarisi, camileri, sarayları ve surlarıyla efsaneleşmiştir. II. Mehmet’in vizyonu sayesinde İstanbul, sadece Osmanlı’nın değil, tüm dünyanın tarih sahnesinde kalıcı bir iz bırakmıştır.
             </p>
         </section>
     </div>
 
     <footer>
-        &copy; 2025 İstanbul’un Fethi Web Sitesi
+        &copy; 2025 İstanbul’un Fethi Web Sitesi | Tüm Hakları Saklıdır
     </footer>
 </body>
 </html>
